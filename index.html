@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+<head>
+      <title>two of us</title>
+  <meta name="keywords" content="stoicism, stoic, aurelius, memento, mori, philosophy, death, memories, memory, beatles">
+
+</head>
+{% block head %}
+<title style="text-align: center", font-size: 40px></title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8272450601766413"
+     crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center", font-size: 30px>2ofUs</h1>
+    <h2 style="text-align: center;">A Stoic reminder that we are all running out of time based on the Beatles song <a href="https://www.youtube.com/watch?v=s2fKZy7DQS0" target="_blank">Two of Us</a>.
+    <br>
+    <a href='/learnmore', style="font-size:12px">Learn More</a>
+    </h2>
+    {% if tasks | length< 1 %}
+    <h2 style="text-indent: 500px"></h2>
+
+    {% else %}
+    <h2 style="text-indent: 500px"></h2>
+
+
+    {% endif %}
+
+
+
+<h3 style="margin-left: 0px;">
+    <form action="/" method="POST">
+        <fieldset style="width: 200px">
+            <legend>About you</legend>
+            <label for="aname">Your first name:</label>
+            <input type="text" id="aname" name="aname" required><br>
+
+            <label for="asex">Your sex:</label>
+            <input type="radio" id="male" name="asex" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="asex" name="asex" value="female">
+            <label for="female">Female</label><br>
+
+            <label for="abirth">Year you were born:</label>
+            <input type="integer" id="abirth" name="abirth" required>
+        </fieldset>
+        <br>
+
+        <fieldset style="width: 200px">
+            <legend>About your friend</legend>
+            <label for="bname">Your friend's first name:</label>
+            <input type="text" id="bname" name="bname" required><br>
+            <label for="bsex">Your friend's sex:</label><br>
+            <input type="radio" id="male" name="bsex" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="bsex" value="female">
+            <label for="female">Female</label><br>
+            <label for="bbirth">Year your friend was born:</label>
+            <input type="integer" id="bbirth" name="bbirth" required>
+        </fieldset>
+        <br>
+
+        <fieldset style="width: 200px">
+            <label for="abyear">Year you and your friend first met:</label>
+            <input type="integer" id="abyear" name="abyear" required>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit" style = "margin-left: 710px">
+
+    </form>
+</h3>
+
+</div>
+{% endblock %}
