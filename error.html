@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<title style="text-align: center", font-size: 30px></title>
+    {% block head %}
+    
+   <h1 style="text-align: center">Results</h1> 
+   {% endblock %} 
+</title>
+
+
+<body style="text-align: center">
+    {% block body %}
+   
+        <p>There was an error</p>
+        <a href="/">
+            <button>Try again</button>
+        </a>
+   
+    
+    {% endblock %} 
+</body>
+</html>
