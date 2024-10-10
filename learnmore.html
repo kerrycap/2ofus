@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<title style="text-align: center", font-size: 30px></title>
+    {% block head %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8272450601766413"
+     crossorigin="anonymous"></script>
+   <h1 style="text-align: center">Results</h1>
+   {% endblock %}
+</title>
+
+
+<body style="text-align: center">
+    {% block body %}
+
+        <p>Stoic philosphy (note the capital 'S') has been around for well over 2000 years. It was first practiced by ancient Greeks and Romans, perhaps most famously by the Roman emperor, Marcus Aurelius. One of the foundations of Stoicism is 'Momento Mori' which translates to: </p>
+        <p><b>'Remember, you will die'.</b> </p>
+        <p>Kind of grim. I believe it means that no matter your actions or those of others, you will still die. As Marcus himself wrote: </p>
+        <p><b>"In three generations you will be forgotten. Live a happy, peaceful life."</b></p>
+        <p>The Beatles song, Two of Us, has a line: </p>
+        <p><b>"You and I have memories longer than the road that stretches out ahead".</b> </p>
+        <p>My interpretation is that I am running out of time to spend with the people who are close to me.</p>
+        <p>This simple App uses your age, as well as the US Social Security actuarial tables, to predict which is longer, the memories you've made, or "the road that stretches out ahead".</p>
+        <p>I wrote this for fun and maybe to inspire. The life expectancies are actuarial estimates, not set in stone. Take it with a grain of salt.</p>
+
+        <a href="/">
+            <button>Lets do this!</button>
+        </a>
+
+
+    {% endblock %}
+</body>
+<footer>
+    {% block footer %}
+
+    <p>Author: StoicDoc</p>
+    <p><a href="mailto:StoicDoc1@gmail.com">Email the Creator</a></p>
+
+
+{% endblock %}
+</footer>
+
+</html>
