@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<title style="text-align: center", font-size: 30px></title>
+    {% block head %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8272450601766413"
+     crossorigin="anonymous"></script>
+   <h1 style="text-align: center">Results</h1>
+
+</title>
+
+    {% endblock %}
+
+<body style="text-align: center">
+    {% block body %}
+    {% if blife %}
+        <p>{{aname}} is about {{aage}} years old and is expected to live {{ alife }} more years.</p>
+        <p>{{bname}} is about {{bage}} years old and is expected to live {{ blife }} more years.</p>
+        <p>{{aname}} and {{bname}} have known each other for {{yearstogether}} years.</p>
+        <p>{{aname}} and {{bname}} have {{timeleft}} years left to make more memories.</p>
+        <p>Keep making memories!</p>
+        <a href="/">
+            <button>Try again</button>
+        </a>
+    {% else %}
+        <p>its not working</p>
+    {% endif %}
+
+    {% endblock %}
+</body>
+</html>
